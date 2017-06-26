@@ -84,6 +84,7 @@ type ListUsersOptions struct {
 // GitLab API docs:
 // https://gitlab.com/gitlab-org/gitlab-ce/blob/8-16-stable/doc/api/users.md#list-users
 func (s *UsersService) ListUsers(opt *ListUsersOptions, options ...OptionFunc) ([]*User, *Response, error) {
+
 	req, err := s.client.NewRequest("GET", "users", opt, options)
 	if err != nil {
 		return nil, nil, err

@@ -1,6 +1,6 @@
 go-github CHANGELOG
 ===================
-
+//test
 0.4.0
 -----
 - Add support to use [`sudo`](https://docs.gitlab.com/ce/api/README.html#sudo) for all API calls.
